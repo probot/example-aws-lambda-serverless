@@ -28,6 +28,8 @@ provider:
     APP_ID: ${param:APP_ID}
     PRIVATE_KEY: ${param:PRIVATE_KEY}
     WEBHOOK_SECRET: ${param:WEBHOOK_SECRET}
+    NODE_ENV: production
+    LOG_LEVEL: debug
 
 functions:
   webhooks:
