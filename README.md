@@ -1,4 +1,4 @@
-# 🚧 WORK IN PROGRESS - See [#1](https://github.com/probot/example-aws-lambda-serverless)
+# 🚧 WORK IN PROGRESS - See [#1](https://github.com/probot/example-aws-lambda-serverless/pull/1)
 
 # Probot & AWS Lambda example
 
