@@ -9,7 +9,7 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "probot": "^11.0.5"
+    "@probot/adapter-aws-lambda-serverless": "^2.0.0"
   },
   "repository": "https://github.com/probot/example-aws-lambda-serverless",
   "keywords": [],
