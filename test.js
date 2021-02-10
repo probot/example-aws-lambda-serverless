@@ -4,7 +4,10 @@ const assert = require("uvu/assert");
 const nock = require("nock");
 nock.disableNetConnect();
 
-const { Probot, ProbotOctokit } = require("probot");
+const {
+  Probot,
+  ProbotOctokit,
+} = require("@probot/adapter-aws-lambda-serverless");
 
 const app = require("./app");
 
