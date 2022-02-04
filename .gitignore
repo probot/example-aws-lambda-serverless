@@ -3,3 +3,7 @@ node_modules
 
 # Serverless directories
 .serverless
+
+.env
+coverage
+.nyc_output
