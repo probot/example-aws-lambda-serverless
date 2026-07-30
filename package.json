@@ -16,7 +16,7 @@
   "author": "Gregor Martynus (https://twitter.com/gr2m)",
   "license": "ISC",
   "devDependencies": {
-    "nock": "^13.0.7",
+    "nock": "^14.0.0",
     "smee-client": "^1.2.2",
     "uvu": "^0.5.1"
   },
