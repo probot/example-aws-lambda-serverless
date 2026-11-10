@@ -4,7 +4,7 @@ This repository is an example of how to deploy the "Hello, World" of probot apps
 
 ## Local setup
 
-Use Node.js 24 LTS. The test dependency Nock 15 requires Node.js >=22.20.0.
+Use Node.js 26 LTS. The test dependency Nock 15 requires Node.js >=22.20.0.
 
 Install dependencies
 
