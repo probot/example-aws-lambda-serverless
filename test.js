@@ -1,8 +1,7 @@
 const { suite } = require("uvu");
 const assert = require("uvu/assert");
 
-const nock = require("nock");
-nock.disableNetConnect();
+let nock;
 
 const {
   Probot,
@@ -14,6 +13,11 @@ const app = require("./app");
 /** @type {import('probot').Probot */
 let probot;
 const test = suite("app");
+test.before(async () => {
+  ({ default: nock } = await import("nock"));
+  nock.disableNetConnect();
+});
+
 test.before.each(() => {
   probot = new Probot({
     // simple authentication as alternative to appId/privateKey
@@ -29,9 +33,8 @@ test.before.each(() => {
   probot.load(app);
 });
 
-test("recieves issues.opened event", async function () {
+test("receives issues.opened event", async function () {
   const mock = nock("https://api.github.com")
-    // create new check run
     .post(
       "/repos/probot/example-aws-lambda-serverless/issues/1/comments",
       (requestBody) => {

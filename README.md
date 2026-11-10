@@ -4,6 +4,8 @@ This repository is an example of how to deploy the "Hello, World" of probot apps
 
 ## Local setup
 
+Use Node.js 24 LTS. The test dependency Nock 15 requires Node.js >=22.20.0.
+
 Install dependencies
 
 ```
@@ -38,6 +40,15 @@ For continuous deployment via GitHub action, copy [this repository's deploy work
 
 1. `SERVERLESS_ACCESS_KEY` - You can create a Serverless access key at `https://app.serverless.com/<your org>/settings/accessKeys`
 2. `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` - you will likely find your AWS credentials in `~/.aws/credentials`
+
+## Tests
+
+```
+npm test
+```
+
+The unit tests use Nock 15 to intercept GitHub API requests, including native
+`fetch` requests. No real GitHub credentials are required.
 
 ### Debug via unit tests
 1. Intall nyc and mocha: `npm install -g nyc mocha`
