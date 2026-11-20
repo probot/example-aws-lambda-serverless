@@ -22,7 +22,7 @@ Follow the instructions to register a new GitHub app.
 
 ## Deployment
 
-In order to deploy the app from you local environment, follow the [Serverless user guide for AWS](https://www.serverless.com/framework/docs/providers/aws/guide/quick-start/).
+In order to deploy the app from you local environment, follow the [Serverless Deploying to AWS documentation](https://www.serverless.com/framework/docs/providers/aws/guide/deploying).
 
 If you use this example as a template, make sure to update [`serverless.yml`](serverless.yml) and set new values for
 
