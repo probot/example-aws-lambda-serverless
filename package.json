@@ -5,7 +5,7 @@
   "description": "Probot & AWS Lambda example",
   "main": "app.js",
   "scripts": {
-    "start": "probot run ./app.js",
+    "start": "node start.js ./app.js",
     "test": "node test.js"
   },
   "dependencies": {
